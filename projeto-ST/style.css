@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C0102;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "FonteStranger";
+    src: url(projeto-ST/fontes/Benguiat\ Bold.ttf);
+}
+
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+header{
+    width: 100%;
+    display: flex;  /*colocar lado a lado*/
+    justify-content:  space-between; /*espaço entre os elementos*/
+    padding: 4vw;
+    position: absolute;
+    z-index: 9; /*coloca o header na frente da imagem de fundo*/
+}
+    section{
+    width: 100%;
+    display: flex;
+    padding: 7vw;
+    }
+
+
+button{
+    background-color: transparent;
+    color : white;
+    font-size: 16px;
+    display: flex;
+    gap: 12px;
+    border: none;
+    outline: none;
+    padding: 16px 0px;
+    border-bottom: 1px solid white;
+    }
+
+#preloader 
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   background-color: #0C0102;
+   position: fixed;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+
+svg{
+    width: 40vw;
+    height: auto;
+
+path {
+    fill: rgba(168, 19, 19, 0.356);
+    stroke:rgba(168, 19, 19);
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    
+    
+}
+
+}
+
+}
+
+  
+.bgMonstro{
+    background-image: url(projeto-ST/imagens/bg-sec2.webp);
+    background-position: center;
+    background-size: cover;
+     z-index: 2;
+     position: relative;
+     background-color: #0C0102;
+}
+ul{
+    list-style-type: none;
+}
+.hero {
+    background-position: 50% 0%;
+    background-size: cover; /*ajusta a imagem ao tamanho da tela*/
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw 7vw 7vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+.hero picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hero .esquerda, .hero .direita {
+    width: 30%;
+    z-index: 3;
+}
+
+.hero .esquerda h3 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.hero .esquerda h1 {
+    font-size: 4vw;
+    font-family: 'FonteStranger', sans-serif;
+}
+
+.hero .direita {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.hero .direita p {
+    font-size: 2vw;
+    margin-bottom: 32px;
+    text-align: end;
+}
+
+.hero::before{
+    content: "";
+    background: linear-gradient(180deg, rgba(12, 1, 2, 0.00) 0%, #0C0102 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.cidade{
+   flex-direction: column;
+   position: relative;
+   z-index: 3;
+}
+
+.cidade .titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cidade .cards{
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cidade .card{
+    background-image: url(projeto-ST/imagens/card1.webp);
+    width: 32%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cidade .card:nth-child(2){
+    background-image: url(projeto-ST/imagens/card2.webp);
+}
+
+.cidade .card:nth-child(3){
+    background-image: url(projeto-ST/imagens/card3.webp);
+}
+
+.SecaoDepoimentos{
+    flex-direction: column;
+}
+
+.SecaoDepoimentos .titulo h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.SecaoDepoimentos .logotipos{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.SecaoDepoimentos .depoimentos{
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SecaoDepoimentos .depoimento{
+    width: 32%;
+}
+
+.secaoObrigado{
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    background-color: #0C0102;
+    
+h2{
+    margin-bottom: 40px;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(projeto-ST/imagens/bg-footer.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+
+    .conteudoFooter{
+    display: flex;
+    width: 100%;
+    padding: 7vw;
+
+.secoesFooter{
+        display: flex;
+        flex: 1;
+        justify-content: end;
+        gap: 6%;
+        align-items: end;
+
+
+
+    .redesocial{
+        
+        ul{
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+  
+    }
+    
+}
+    }
+
+    .logoFooter{
+        width: 35%;
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 4px;
+        }
+        h2 {
+            font-size: 4vw;
+            font-family: 'FonteStranger', sans-serif;
+        }
+    }
+    .logotiposFooter{
+        width: 100%;
+        display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero .esquerda, .hero .direita {
+        width: 100%;
+    }
+
+    .hero .esquerda h1 {
+        font-size: 8vw;
+    }
+
+    .hero .direita {
+        align-items: center;
+    }
+
+    .hero .direita p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .cidade .titulo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cidade .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cidade .card {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .SecaoDepoimentos .logotipos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .SecaoDepoimentos .depoimentos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .SecaoDepoimentos .depoimento {
+        width: 100%;
+    }
+
+    .secaoObrigado ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer .conteudoFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .secoesFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .logotiposFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .textoInfinito {
+        display: none; /* Hide on mobile if too much */
+    }
+}
+
+    .textoInfinito{
+        width: max-content ;
+        margin-bottom: 80px;
+        display: flex;
+
+
+        h3{
+            color: rgb(191, 191, 191);
+            font-size: 12vw;
+            font-family: "FonteStranger", sans-serif;
+            mix-blend-mode: color-dodge;
+            text-align: center;
+            animation: textoInfinito 6s infinite linear;
+            padding-left: 8vw;
+        }
+        
+
+    }
+}
+
+@keyframes textoInfinito {
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* media queries */
+@media (max-width: 1500px) {
+   .cidade{
+    padding: 4vw;
+   }
+}
+
+@media (max-width: 1400px) {
+   .cidade .card .cards{
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+   }
+}
+
+@media (max-width: 600px) {
+    section{
+        padding: 4vw;
+    }
+
+    h2{
+        font-size: 6vw;
+    }
+
+    header h2{
+        font-size: 28px;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 26% 4vw 0;
+    }
+
+    .hero .esquerda,
+    .hero .direita{
+        width: 100%;
+    }
+
+    .hero .esquerda h3,
+    .hero .esquerda h1{
+        text-align: center;
+    }
+
+    .hero .esquerda h1{
+        font-size: 12vw;
+    }
+
+    .hero .direita{
+        align-items: start;
+    }
+
+    .hero .direita p{
+        font-size: 5.5vw;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+.cidade{
+    margin-top: 0;
+}
+
+.cidade button{
+    display: none; /*esconde o botão em telas menores*/
+}
+
+.cidade .cards{
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cidade .card{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.SecaoDepoimentos .logotipos img:nth-child(1),
+.SecaoDepoimentos .logotipos img:nth-child(3){
+    width: 20%;
+}
+
+.SecaoDepoimentos .logotipos img:nth-child(2){
+    width: 40%;
+}
+
+.SecaoDepoimentos .depoimentos{
+    flex-direction: column;
+    gap: 48px;
+}
+
+.SecaoDepoimentos .depoimento{
+    width: 100%;
+}
+
+.secaoObrigado h2{
+    text-align: center;
+}
+
+.secaoObrigado ul{
+    display: flex;
+    text-align: center;
+    width: max-content;
+    gap: 32px;
+    animation: cidadesLista 15s infinite linear;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes cidadesLista {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-40%);
+    }
+}
+
+footer{
+    padding-top: 40px;
+}
+
+footer .conteudoFooter{
+    padding: 4vw;
+    flex-direction: column;
+}
+
+footer .logoFooter{
+    width: 100%;
+}
+
+footer .logoFooter h2,
+footer .logoFooter h3{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+footer .logoFooter h2 {
+    font-size: 12vw;
+}
+
+footer .secoesFooter{
+    flex-wrap: wrap;  /*permite que os itens quebrem para a próxima linha se não couberem em uma linha*/
+    justify-content: center;
+    align-items: start;
+}
+
+footer .redesocial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0px 32px;
+}
+
+footer .parceirosdemidia{
+    width: 50%;
+}
+
+footer .parceirosdemidia img{
+    width: 80%;
+}
+
+footer .logotiposFooter{
+    margin-top: 40px;
+}
+
+footer .textoInfinito{
+    font-size: 20vw;
+}
+}
